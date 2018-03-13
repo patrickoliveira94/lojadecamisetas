@@ -1,0 +1,886 @@
+Started GET "/" for 127.0.0.1 at 2018-03-13 11:09:56 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/patrick/.rvm/gems/ruby-2.4.1/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/patrick/.rvm/gems/ruby-2.4.1/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (3.2ms)
+Completed 200 OK in 133ms (Views: 6.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 11:17:40 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/patrick/.rvm/gems/ruby-2.4.1/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/patrick/.rvm/gems/ruby-2.4.1/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (3.8ms)
+Completed 200 OK in 7ms (Views: 5.2ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2018-03-13 11:18:38 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/produtos" for 127.0.0.1 at 2018-03-13 11:28:48 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html within layouts/application
+  Rendered produtos/index.html within layouts/application (0.8ms)
+Completed 200 OK in 771ms (Views: 646.2ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2018-03-13 11:31:42 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html within layouts/application
+  Rendered produtos/index.html within layouts/application (0.4ms)
+Completed 200 OK in 40ms (Views: 39.4ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2018-03-13 14:32:07 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html within layouts/application
+  Rendered produtos/index.html within layouts/application (0.9ms)
+Completed 200 OK in 569ms (Views: 431.1ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2018-03-13 14:32:45 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html within layouts/application
+  Rendered produtos/index.html within layouts/application (0.9ms)
+Completed 200 OK in 456ms (Views: 319.8ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2018-03-13 14:33:04 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html within layouts/application
+  Rendered produtos/index.html within layouts/application (0.9ms)
+Completed 200 OK in 464ms (Views: 324.6ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (10.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProdutos (20180313173557)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "produtos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar, "descricao" text, "quantidade" integer, "preco" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180313173557"]]
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-03-13 17:37:51.183486"], ["updated_at", "2018-03-13 17:37:51.183486"]]
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nome", "Camiseta do Big Bang Theory"], ["descricao", "Camiseta super bacana do bbt"], ["quantidade", 10], ["preco", 70.5], ["created_at", "2018-03-13 17:44:42.772706"], ["updated_at", "2018-03-13 17:44:42.772706"]]
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nome", "Camiseta de gastronomia"], ["descricao", "Camiseta super bacana gourmet"], ["quantidade", 8], ["preco", 37.66], ["created_at", "2018-03-13 17:45:19.477020"], ["updated_at", "2018-03-13 17:45:19.477020"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduto Load (0.7ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "produtos"[0m
+  [1m[36mProduto Load (0.6ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos"[0m
+Started GET "/produtos" for 127.0.0.1 at 2018-03-13 14:46:43 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html within layouts/application
+  Rendered produtos/index.html within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2018-03-13 14:47:52 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html within layouts/application
+  Rendered produtos/index.html within layouts/application (0.3ms)
+Completed 200 OK in 39ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2018-03-13 14:49:33 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 65ms (Views: 63.0ms | ActiveRecord: 1.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nome", "Bermuda do big bang"], ["descricao", "Bermuda para combinar com a camiseta. Compre tambem a camiseta"], ["quantidade", 13], ["preco", 120.3], ["created_at", "2018-03-13 17:50:25.128337"], ["updated_at", "2018-03-13 17:50:25.128337"]]
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/produtos" for 127.0.0.1 at 2018-03-13 14:50:28 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.2ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2018-03-13 15:02:42 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.2ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2018-03-13 15:02:48 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.2ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2018-03-13 15:17:35 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  Rendered produtos/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/patrick/Documentos/projetos/lojadecamisetas/app/views/produtos/index.html.erb:13: syntax error, unexpected ':'
+'.freeze;         todos = Produto.order: all 
+                                        ^
+/home/patrick/Documentos/projetos/lojadecamisetas/app/views/produtos/index.html.erb:14: syntax error, unexpected keyword_do_block, expecting keyword_end
+         todos.each do |produto| 
+                      ^
+/home/patrick/Documentos/projetos/lojadecamisetas/app/views/produtos/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/produtos/index.html.erb:13: syntax error, unexpected ':'
+app/views/produtos/index.html.erb:14: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/views/produtos/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/produtos" for 127.0.0.1 at 2018-03-13 15:18:03 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC[0m
+  Rendered produtos/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2018-03-13 15:21:41 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC[0m
+  Rendered produtos/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2018-03-13 15:42:01 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.2ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC[0m
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC[0m
+  Rendered produtos/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 35ms (Views: 31.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2018-03-13 15:45:31 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 45ms (Views: 41.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2018-03-13 15:58:39 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 867ms (Views: 854.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2018-03-13 15:59:35 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (1.2ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 78ms (Views: 73.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2018-03-13 16:00:25 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.2ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2018-03-13 16:01:35 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.2ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2018-03-13 16:03:51 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 43ms (Views: 39.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 16:03:54 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.5ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 38ms (Views: 35.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 16:05:07 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 50ms (Views: 46.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 16:06:55 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.6ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.5ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 39ms (Views: 35.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 16:06:56 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.5ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.2ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 35ms (Views: 32.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 16:06:58 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 40ms (Views: 37.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-03-13 16:10:07 -0300
+Processing by Rails::InfoController#routes as HTML
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.5/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [1 times] (1.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.5/lib/rails/templates/rails/info/routes.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 16:14:20 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 27.1ms)
+
+
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 16:29:02 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 56ms (Views: 54.6ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/produtos" for 127.0.0.1 at 2018-03-13 16:29:20 -0300
+Processing by ProdutosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iiTkMWxHnAKuHritMn+qrswrjvujwNxpgKoVZqILCmNGBuJJ33jtksLNvFtZIW5fEvQ9+McoVn+HtldX3u0omA==", "produto"=>{"nome"=>"Camiseta Azul", "descricao"=>"Camiseta Azul", "quantidade"=>"30", "preco"=>"30"}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nome", "Camiseta Azul"], ["descricao", "Camiseta Azul"], ["quantidade", 30], ["preco", 30.0], ["created_at", "2018-03-13 19:29:20.696696"], ["updated_at", "2018-03-13 19:29:20.696696"]]
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  Rendering produtos/create.html.erb within layouts/application
+  Rendered produtos/create.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 41ms (Views: 30.2ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 16:29:25 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (2.2ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.7ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 38ms (Views: 34.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 16:33:58 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 16:35:01 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 16:35:11 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.2ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 47ms (Views: 28.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 16:36:41 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 16:37:04 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 16:37:50 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 16:38:17 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 16:39:26 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 16:40:34 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 16:42:32 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 16:43:07 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 44ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 16:44:46 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.5ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.2ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 35ms (Views: 32.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 16:48:13 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.2ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 33ms (Views: 30.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 16:48:19 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 16:48:39 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 39ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/produtos" for 127.0.0.1 at 2018-03-13 16:52:10 -0300
+Processing by ProdutosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+JCqDu3pmrRu+TWYIuVG3SgNpXAOg8GT1QFf3VehBRE0sqx2XtbrJAIqMW5Ju4Is9tIWc2prS4XSHR3sK0cn6g==", "produto"=>{"nome"=>"Camiseta NBA", "descricao"=>"Camiseta NBA", "quantidade"=>"50", "preco"=>"80"}, "commit"=>"Criar o produto"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.1ms)[0m  [1m[32mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nome", "Camiseta NBA"], ["descricao", "Camiseta NBA"], ["quantidade", 50], ["preco", 80.0], ["created_at", "2018-03-13 19:52:10.436597"], ["updated_at", "2018-03-13 19:52:10.436597"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  Rendering produtos/create.html.erb within layouts/application
+  Rendered produtos/create.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 62ms (Views: 35.2ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 16:52:13 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.2ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 34ms (Views: 31.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 16:53:46 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.2ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 37ms (Views: 32.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 16:54:09 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 17:01:24 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.5ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 61ms (Views: 57.5ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/produtos/5" for 127.0.0.1 at 2018-03-13 17:01:27 -0300
+Processing by ProdutosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sJDjY32wWEcZYvjzzcQWGaMl5V0Cto6IJ8MgeAnRLQB8suUbzo8p13Wx/AWmmtLoffpWXmZeBJ4g32JJdTcP+w==", "id"=>"5"}
+  [1m[36mProduto Load (0.2ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "produtos" WHERE "produtos"."id" = ?[0m  [["id", 5]]
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 7.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 17:01:27 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 39ms (Views: 36.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 17:03:02 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 48ms (Views: 45.8ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/produtos/4" for 127.0.0.1 at 2018-03-13 17:03:15 -0300
+Processing by ProdutosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"d/MDHZ4QZNqP60ylpjVL7gJdx1RckC/X0CG86AAyK3i70QVlLS8VSuM4SFPNa48f3IJ0Vzh4pcHXPf7ZfNQJgw==", "id"=>"4"}
+  [1m[36mProduto Load (0.5ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[31mDELETE FROM "produtos" WHERE "produtos"."id" = ?[0m  [["id", 4]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 17:03:15 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 52ms (Views: 49.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 17:04:56 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 52ms (Views: 49.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 17:04:58 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 39ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 17:04:59 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 45ms (Views: 42.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 17:07:21 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 37ms (Views: 34.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 17:16:47 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (3.4ms)
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 17:16:47 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 50ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/produtos" for 127.0.0.1 at 2018-03-13 17:16:51 -0300
+Processing by ProdutosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q7aIJDjC94OvY5RJMSG2UdBEa/bmBLVcKY3YcZ7k/RpJDaRAQY4jtOaZkUKSgCkYbmlT8dNciuQUkymRX8O/LA==", "produto"=>{"nome"=>"fefe", "descricao"=>"ertere", "quantidade"=>"1", "preco"=>"2"}, "commit"=>"Criar o produto"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nome", "fefe"], ["descricao", "ertere"], ["quantidade", 1], ["preco", 2.0], ["created_at", "2018-03-13 20:16:51.334359"], ["updated_at", "2018-03-13 20:16:51.334359"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 17:16:51 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/produtos/6" for 127.0.0.1 at 2018-03-13 17:16:55 -0300
+Processing by ProdutosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KWw5uhd9SEfbKDFSILkFg6NM7G4MPfBLc/r69IDr3NflTj/CpEI517f7NaRL58FyfZNfbWjVel105rjF/A3+LA==", "id"=>"6"}
+  [1m[36mProduto Load (0.2ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "produtos" WHERE "produtos"."id" = ?[0m  [["id", 6]]
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 17:16:55 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 17:16:58 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.2ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 37ms (Views: 35.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 17:29:21 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.2ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (320.6ms)
+Completed 500 Internal Server Error in 327ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `produtos_new_path' for #<#<Class:0x007f92759319d0>:0x007f9275920ba8>
+Did you mean?  produtos_path
+               produto_path):
+    42:     </tbody>
+    43: </table>
+    44: 
+    45: <%= link_to "Criar novo produto", produtos_new_path %>
+  
+app/views/produtos/index.html.erb:45:in `_app_views_produtos_index_html_erb__573266616704477217_70133507267220'
+Started GET "/" for 127.0.0.1 at 2018-03-13 17:30:07 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (333.1ms)
+Completed 500 Internal Server Error in 340ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `produtos_new_path' for #<#<Class:0x007f9276cd8560>:0x007f9276ccdef8>
+Did you mean?  produtos_path
+               produto_path):
+    42:     </tbody>
+    43: </table>
+    44: 
+    45: <%= link_to "Criar novo produto", produtos_new_path %>
+  
+app/views/produtos/index.html.erb:45:in `_app_views_produtos_index_html_erb__573266616704477217_70133517567740'
+Started GET "/" for 127.0.0.1 at 2018-03-13 17:30:44 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 35ms (Views: 31.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 17:30:46 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 17:30:47 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (2.1ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 47ms (Views: 42.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 17:39:17 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.2ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 35ms (Views: 31.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 17:39:19 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 17:39:20 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 52ms (Views: 48.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 17:41:37 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 338ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `busca_produto_path' for #<#<Class:0x007f9276cd8560>:0x007f9276d57f40>):
+    10: 
+    11:   <body>
+    12:     <%= nav_bar brand: "Kunstee", brand_link: root_url do %>
+    13:       <%= form_tag busca_produto_path, class: "navbar-form" do %>
+    14:         <div class="form-group">
+    15:             <%= text_field_tag :nome, nil, class: "form-control" %>
+    16:             <%= button_to "Buscar", nil, class: "btn btn-default" %>
+  
+app/views/layouts/application.html.erb:13:in `block in _app_views_layouts_application_html_erb__1543113210027792576_70133517704360'
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__1543113210027792576_70133517704360'
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 17:41:43 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 356ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `busca_produto_path' for #<#<Class:0x007f9276cd8560>:0x007f9270082b18>):
+    10: 
+    11:   <body>
+    12:     <%= nav_bar brand: "Kunstee", brand_link: root_url do %>
+    13:       <%= form_tag busca_produto_path, class: "navbar-form" do %>
+    14:         <div class="form-group">
+    15:             <%= text_field_tag :nome, nil, class: "form-control" %>
+    16:             <%= button_to "Buscar", nil, class: "btn btn-default" %>
+  
+app/views/layouts/application.html.erb:13:in `block in _app_views_layouts_application_html_erb__1543113210027792576_70133460988260'
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__1543113210027792576_70133460988260'
+Started GET "/" for 127.0.0.1 at 2018-03-13 17:42:29 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.2ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  [1m[36mCACHE Produto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mCACHE Produto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  [1m[36mCACHE Produto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mCACHE Produto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  [1m[36mCACHE Produto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mCACHE Produto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  [1m[36mCACHE Produto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mCACHE Produto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  [1m[36mCACHE Produto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mCACHE Produto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  [1m[36mCACHE Produto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mCACHE Produto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  [1m[36mCACHE Produto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mCACHE Produto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (305.9ms)
+Completed 500 Internal Server Error in 310ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `busca_produto_path' for #<#<Class:0x007f9276cd8560>:0x007f92764b52c0>):
+    1: <%= nav_bar brand: "Kunstee", brand_link: root_url do %>
+    2:     <%= form_tag busca_produto_path, class: "navbar-form" do %>
+    3:         <div class="form-group">
+    4:             <%= text_field_tag :nome, nil, class: "form-control" %>
+    5:             <%= button_to "Buscar", nil, class: "btn btn-default" %>
+  
+app/views/produtos/index.html.erb:2:in `block in _app_views_produtos_index_html_erb__573266616704477217_70133513301900'
+app/views/produtos/index.html.erb:1:in `_app_views_produtos_index_html_erb__573266616704477217_70133513301900'
+Started GET "/" for 127.0.0.1 at 2018-03-13 17:43:49 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.2ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 55ms (Views: 50.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 17:43:54 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (3.5ms)
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 17:43:54 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 73ms (Views: 71.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 46ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 17:43:55 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 49ms (Views: 44.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 17:44:45 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.2ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 35ms (Views: 33.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 17:44:49 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 38ms (Views: 35.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 17:44:50 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 17:44:51 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 67ms (Views: 64.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 17:44:57 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 49ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 17:44:59 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 54ms (Views: 51.1ms | ActiveRecord: 0.7ms)
+
+
