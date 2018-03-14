@@ -884,3 +884,48 @@ Processing by ProdutosController#index as HTML
 Completed 200 OK in 54ms (Views: 51.1ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-03-13 23:33:09 -0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 2844ms (Views: 2792.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-13 23:33:39 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/new.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 263ms (Views: 230.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/produtos" for 127.0.0.1 at 2018-03-13 23:34:11 -0300
+Processing by ProdutosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zu8mR9fbQFFH6af7S3DHWe6Uh65OquQbbGX80q+w9VcWRvk7UoCTgyuMgULf1UeT3J4nAs16arqYFae740nhOQ==", "produto"=>{"nome"=>"Boné Chicago Bulls", "descricao"=>"Boné Chicago Bulls", "quantidade"=>"40", "preco"=>"60"}, "commit"=>"Criar o produto"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nome", "Boné Chicago Bulls"], ["descricao", "Boné Chicago Bulls"], ["quantidade", 40], ["preco", 60.0], ["created_at", "2018-03-14 02:34:11.163695"], ["updated_at", "2018-03-14 02:34:11.163695"]]
+  [1m[35m (104.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 112ms (ActiveRecord: 104.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 23:34:11 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 228ms (Views: 197.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-13 23:34:58 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered produtos/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 232ms (Views: 201.4ms | ActiveRecord: 0.0ms)
+
+

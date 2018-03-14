@@ -1,24 +1,39 @@
-# README
+# Loja de Camisetas
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Repositório de estudos desenvolvido em Ruby on Rails
 
-Things you may want to cover:
+## Começando
 
-* Ruby version
+Estas instruções irão levá-lo a uma cópia do projeto em funcionamento em sua máquina local para fins de desenvolvimento e teste.
 
-* System dependencies
+### Pré-requisitos
 
-* Configuration
+* [Ruby](https://www.ruby-lang.org/pt/) - O projeto foi criado na versão 2.3.3
+* [Rails](http://rubyonrails.org/) - O projeto foi criado na versão 5.1.5
+* [SQLite](https://www.sqlite.org/index.html)
 
-* Database creation
+### Instalação
 
-* Database initialization
+Execute pelo terminal na raiz da aplicação
 
-* How to run the test suite
+```
+gem install bundler
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Para instalar todas as dependencias:
 
-* Deployment instructions
+```
+bundle install
+```
 
-* ...
+## Execução
+
+Inicie o servidor através do comando:
+
+```
+rails server
+```
+
+## Documentação
+
+[Rails Guides](http://guides.rubyonrails.org/getting_started.html)
