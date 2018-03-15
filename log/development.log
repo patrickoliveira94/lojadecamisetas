@@ -4598,3 +4598,124 @@ Processing by ProdutosController#index as HTML
 Completed 200 OK in 53ms (Views: 49.9ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-03-14 22:50:11 -0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  Rendered collection of produtos/_produto.html.erb [5 times] (12.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered collection of produtos/_produto.html.erb [2 times] (0.0ms)
+  Rendered produtos/index.html.erb within layouts/application (129.6ms)
+Completed 200 OK in 1364ms (Views: 1277.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos/7/edit" for 127.0.0.1 at 2018-03-14 22:50:49 -0300
+Processing by ProdutosController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering produtos/edit.html.erb within layouts/application
+  [1m[36mDepartamento Load (0.0ms)[0m  [1m[34mSELECT "departamentos".* FROM "departamentos"[0m
+  Rendered produtos/_form.html.erb (736.0ms)
+  Rendered produtos/edit.html.erb within layouts/application (772.5ms)
+Completed 200 OK in 1022ms (Views: 971.2ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/produtos/7" for 127.0.0.1 at 2018-03-14 22:50:58 -0300
+Processing by ProdutosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Hj/ZWRH4d/GwuPqpEGPcYyP8pot38+1FDsp8eFsP9AHlNigqLlaUysIrqQR2RCUaEa5zttMWWMt6It28zgQsEw==", "produto"=>{"nome"=>"Boné Chicago Bulls", "descricao"=>"Boné Chicago Bulls teste", "departamento_id"=>"3", "quantidade"=>"40", "preco"=>"59.9"}, "commit"=>"Atualizar o produto", "id"=>"7"}
+  [1m[36mProduto Load (4.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDepartamento Load (0.0ms)[0m  [1m[34mSELECT  "departamentos".* FROM "departamentos" WHERE "departamentos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.0ms)[0m  [1m[33mUPDATE "produtos" SET "descricao" = ?, "updated_at" = ? WHERE "produtos"."id" = ?[0m  [["descricao", "Boné Chicago Bulls teste"], ["updated_at", "2018-03-15 01:50:58.770949"], ["id", 7]]
+  [1m[35m (82.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 196ms (ActiveRecord: 86.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-14 22:50:58 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  Rendered collection of produtos/_produto.html.erb [5 times] (0.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered collection of produtos/_produto.html.erb [2 times] (4.0ms)
+  Rendered produtos/index.html.erb within layouts/application (68.0ms)
+Completed 200 OK in 276ms (Views: 248.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos/7/edit" for 127.0.0.1 at 2018-03-14 22:51:05 -0300
+Processing by ProdutosController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering produtos/edit.html.erb within layouts/application
+  [1m[36mDepartamento Load (0.0ms)[0m  [1m[34mSELECT "departamentos".* FROM "departamentos"[0m
+  Rendered produtos/_form.html.erb (8.0ms)
+  Rendered produtos/edit.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 269ms (Views: 262.2ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/produtos/7" for 127.0.0.1 at 2018-03-14 22:51:12 -0300
+Processing by ProdutosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1aqY8DRufHibcS95sgbhI3ksISDKyOsbMputdcpuQQouo2mDC8CfQ+nifNTUIRhaS370HW4tXpVGcwyxX2WZGA==", "produto"=>{"nome"=>"Boné Chicago Bulls", "descricao"=>"Boné Chicago Bulls", "departamento_id"=>"3", "quantidade"=>"40", "preco"=>"59.9"}, "commit"=>"Atualizar o produto", "id"=>"7"}
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDepartamento Load (0.0ms)[0m  [1m[34mSELECT  "departamentos".* FROM "departamentos" WHERE "departamentos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (4.0ms)[0m  [1m[33mUPDATE "produtos" SET "descricao" = ?, "updated_at" = ? WHERE "produtos"."id" = ?[0m  [["descricao", "Boné Chicago Bulls"], ["updated_at", "2018-03-15 01:51:12.990728"], ["id", 7]]
+  [1m[35m (104.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 124ms (ActiveRecord: 108.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-14 22:51:13 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  Rendered collection of produtos/_produto.html.erb [5 times] (4.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered collection of produtos/_produto.html.erb [2 times] (0.0ms)
+  Rendered produtos/index.html.erb within layouts/application (72.0ms)
+Completed 200 OK in 300ms (Views: 268.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos/new" for 127.0.0.1 at 2018-03-14 22:51:15 -0300
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  [1m[36mDepartamento Load (0.0ms)[0m  [1m[34mSELECT "departamentos".* FROM "departamentos"[0m
+  Rendered produtos/_form.html.erb (8.0ms)
+  Rendered produtos/new.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 222ms (Views: 219.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-14 22:51:18 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  Rendered collection of produtos/_produto.html.erb [5 times] (0.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered collection of produtos/_produto.html.erb [2 times] (0.0ms)
+  Rendered produtos/index.html.erb within layouts/application (68.7ms)
+Completed 200 OK in 317ms (Views: 271.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos/busca?utf8=%E2%9C%93&nome=bulls&authenticity_token=63Vb6FKkBYYo4iuGxLJqysMsuL6zweVT5JYe%2B1fCSCmzaDdJjGAjHxcLOCl53yKlzEmAAaxPfAeNQQNzNF34zw%3D%3D" for 127.0.0.1 at 2018-03-14 22:51:22 -0300
+Processing by ProdutosController#busca as HTML
+  Parameters: {"utf8"=>"✓", "nome"=>"bulls", "authenticity_token"=>"63Vb6FKkBYYo4iuGxLJqysMsuL6zweVT5JYe+1fCSCmzaDdJjGAjHxcLOCl53yKlzEmAAaxPfAeNQQNzNF34zw=="}
+  Rendering produtos/busca.html.erb within layouts/application
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos" WHERE (nome like '%bulls%')[0m
+  Rendered collection of produtos/_produto.html.erb [1 times] (0.0ms)
+  Rendered produtos/busca.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 284ms (Views: 241.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-14 22:51:25 -0300
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."nome" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  Rendered collection of produtos/_produto.html.erb [5 times] (0.0ms)
+  [1m[36mProduto Load (0.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" ORDER BY "produtos"."preco" ASC LIMIT ?[0m  [["LIMIT", 2]]
+  Rendered collection of produtos/_produto.html.erb [2 times] (0.0ms)
+  Rendered produtos/index.html.erb within layouts/application (80.0ms)
+Completed 200 OK in 274ms (Views: 254.6ms | ActiveRecord: 0.0ms)
+
+
